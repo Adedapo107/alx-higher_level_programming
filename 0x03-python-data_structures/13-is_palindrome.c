@@ -7,7 +7,7 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int is_palindrome(listint_t **head)
 {
 	listint_t *head;
 
