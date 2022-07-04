@@ -1,6 +1,13 @@
 #!/usr/bin/python3
-def add_attribute(*args):
-    if "main" in str(type(args[0])):
-        setattr(args[0], args[1], args[2])
-    else:
+"""
+    101-add_attribute: add_attribute()
+"""
+
+
+def add_attribute(cls, name, value):
+    """
+        adds a new attribute if possible.
+    """
+    if hasattr(cls, "__dict__") is False:
         raise TypeError("can't add new attribute")
+    setattr(cls, name, value)
