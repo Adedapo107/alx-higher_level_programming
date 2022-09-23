@@ -4,7 +4,7 @@
     Displays the body of the response
 """
 import requests
-import sys
+from sys import argv
 
 
 if __name__ == '__main__':
